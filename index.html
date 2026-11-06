@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sarah Sufi Sheikh — Writer • Creative Producer • Stand Up Comedian • Drag King</title>
+<meta name="description" content="Sarah Sheikh is a Bengaluru/Goa-based stand-up comedian, live performer, and creative producer whose work sits at the intersection of comedy, character performance, and cultural commentary.">
+<meta name="theme-color" content="#ff4f9a">
+<meta property="og:title" content="Sarah Sufi Sheikh">
+<meta property="og:description" content="Writer • Creative Producer • Stand Up Comedian • Drag King">
+<meta property="og:image" content="assets/hero.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23ff4f9a'/%3E%3Ctext x='50' y='72' font-size='64' font-weight='900' text-anchor='middle' font-family='Arial' fill='%23111'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--u:min(1vw,1.6vh);--p:#ff4f9a;--y:#ffd23f;--c:#f6eddc;--k:#111;--pad:clamp(20px,calc(var(--u)*6),110px)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--k);background:var(--k);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.progress{position:fixed;top:0;left:0;height:6px;width:100%;background:var(--k);z-index:50;transform-origin:0 50%;transform:scaleX(0)}
+.progress::after{content:'';position:absolute;inset:0;background:var(--y);mix-blend-mode:normal}
+.dots{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:40;display:flex;flex-direction:column;gap:14px;mix-blend-mode:difference}
+.dots a{width:12px;height:12px;border-radius:50%;border:2px solid #fff;transition:.3s;display:block}
+.dots a.on{background:#fff;transform:scale(1.5)}
+.dots a:hover{background:#fff}
+.sec{position:relative;min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(24px,calc(var(--u)*4),80px);padding:0 var(--pad);overflow:hidden}
+.sec::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(0,0,0,.13) 3px,transparent 3.5px);background-size:30px 30px;-webkit-mask-image:linear-gradient(135deg,#000,transparent 38%);mask-image:linear-gradient(135deg,#000,transparent 38%);pointer-events:none}
+.sec.dark{color:var(--c)}.sec.dark::before{background-image:radial-gradient(rgba(255,255,255,.1) 3px,transparent 3.5px)}
+.pink{background:var(--p)}.yellow{background:var(--y)}.cream{background:var(--c)}.ink{background:var(--k)}
+.flip{grid-template-columns:1.12fr 1fr}.flip .media{order:-1}
+.sec:not(.flip):not(#hero):not(#king):not(.afaf):not(#contact){grid-template-columns:1fr 1.12fr}#king{grid-template-columns:1.12fr 1fr}.afaf,#contact,#hero{grid-template-columns:1fr 1fr}
+.txt{position:relative;z-index:2;padding:clamp(40px,7vh,90px) 0}
+.h{font-weight:900;letter-spacing:-.04em;line-height:.9;text-transform:uppercase;font-size:clamp(46px,calc(var(--u)*7.4),138px)}
+.h .w{color:#fff;text-shadow:.055em .055em 0 var(--k)}
+.h .py{color:var(--p)}.h .yy{color:var(--y)}
+p{font-weight:500;line-height:1.5;font-size:clamp(17px,calc(var(--u)*1.55),29px)}
+p+p{margin-top:1.1em}
+.chip{display:inline-block;background:var(--k);color:var(--y);font-weight:800;font-size:clamp(14px,calc(var(--u)*1.7),32px);padding:.45em .9em;border-radius:60px;margin:0 .4em .45em 0;letter-spacing:.02em;transition:transform .3s}
+.chip:hover{transform:translateY(-4px) rotate(-2deg)}
+ul{list-style:none;margin-top:clamp(20px,3vh,44px)}
+li{position:relative;padding:.2em 0 .2em 1.5em;font-weight:700;text-transform:uppercase;line-height:1.25;letter-spacing:.01em;font-size:clamp(15px,calc(var(--u)*1.65),31px);margin-bottom:.6em;transition:transform .25s}
+li::before{content:'';position:absolute;left:0;top:.5em;width:.5em;height:.5em;background:currentColor;transform:rotate(45deg);transition:transform .35s}
+li:hover{transform:translateX(12px)}li:hover::before{transform:rotate(225deg) scale(1.5)}
+/* media */
+.media{position:relative;width:100%;align-self:end}
+.blob{position:absolute;border-radius:50%}
+.pop{position:absolute;bottom:0}
+.pop img{width:100%;height:auto;will-change:transform;transform:translate3d(var(--mx,0px),var(--py,0px),0) rotate(var(--rot,0deg))}
+.blobw{will-change:transform;transform:translate3d(calc(var(--mx,0px)*-.6),calc(var(--py,0px)*-.5),0)}
+.card{position:absolute;border:clamp(6px,calc(var(--u)*.75),14px) solid #fff;box-shadow:clamp(8px,calc(var(--u)*1),20px) clamp(8px,calc(var(--u)*1),20px) 0 var(--k);overflow:hidden;border-radius:4px;background:#000}
+.card img{width:100%;height:100%;object-fit:cover}
+/* reveal */
+.rv{opacity:0;transform:translateY(46px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.pp{opacity:0;transform:translateY(80px) scale(.92);transition:opacity .9s,transform 1s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,.1s)}
+.pp.in{opacity:1;transform:none}
+.bl{opacity:0;transform:scale(.6);transition:opacity .8s,transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.bl.in{opacity:1;transform:none}
+.mask{display:block;overflow:hidden;padding-bottom:.06em}
+.mask>span{display:block;transform:translateY(110%);transition:transform 1s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}
+.in .mask>span,.mask.in>span{transform:none}
+/* hero */
+#hero{padding-bottom:70px}
+#hero .photo{position:relative;aspect-ratio:4/5;max-height:84vh;margin:0 auto;border:clamp(8px,calc(var(--u)*1),16px) solid #fff;box-shadow:22px 22px 0 var(--k);transform:rotate(-4deg);transition:transform .6s cubic-bezier(.2,.8,.2,1);overflow:hidden;background:#000}
+#hero .photo:hover{transform:rotate(-1deg) scale(1.02)}
+#hero .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+.hero-t{font-size:clamp(46px,calc(var(--u)*8.4),150px)}
+.hero-s{font-size:clamp(70px,calc(var(--u)*14.6),270px);line-height:.85;margin:.04em 0 .22em -.03em}
+.ticker{position:absolute;left:0;right:0;bottom:0;height:64px;background:var(--k);color:var(--y);overflow:hidden;display:flex;align-items:center;z-index:3;transform:rotate(0)}
+.ticker div{display:flex;white-space:nowrap;animation:tick 28s linear infinite;font-weight:800;font-size:26px;letter-spacing:.06em}
+.ticker span{padding:0 28px}
+@keyframes tick{to{transform:translateX(-50%)}}
+/* afaf */
+.afaf-media{display:grid;gap:clamp(14px,calc(var(--u)*2),28px);align-self:center;padding:clamp(40px,7vh,90px) 0;width:100%;max-width:max(calc(var(--u)*42),88%);margin:0 auto}
+.afaf-media .card{position:relative}
+.afaf-media .card:nth-child(1){transform:rotate(-3deg)}.afaf-media .card:nth-child(2){transform:rotate(2.5deg);width:88%;margin-left:8%}
+.afaf-media .card{transition:transform .5s cubic-bezier(.2,.8,.2,1)}.afaf-media .card:hover{transform:rotate(0) scale(1.03);z-index:3}
+.afaf-media .card img{height:auto}
+/* contact */
+.photo2{position:relative;aspect-ratio:760/880;max-height:86vh;margin:0 auto;transform:rotate(3deg);transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.photo2:hover{transform:rotate(0) scale(1.02)}
+.photo2.card{position:relative}
+.links{margin-top:clamp(24px,4vh,56px)}
+.links a{display:block;width:max-content;max-width:100%;margin-bottom:16px;font-weight:700;font-size:clamp(15px,calc(var(--u)*2.3),42px);padding:.35em .85em;border-radius:60px;background:var(--k);color:var(--y);transition:transform .3s,box-shadow .3s;overflow-wrap:anywhere}
+.links a:nth-child(2){background:#fff;color:var(--k)}.links a:nth-child(3){background:var(--y);color:var(--k)}
+.links a:hover{transform:translate(-6px,-6px);box-shadow:8px 8px 0 var(--k)}
+.top{position:fixed;right:18px;bottom:18px;z-index:40;width:52px;height:52px;border-radius:50%;background:var(--k);color:var(--y);display:grid;place-items:center;font-size:24px;font-weight:900;opacity:0;pointer-events:none;transition:.3s;border:0;cursor:pointer}
+.top.show{opacity:1;pointer-events:auto}.top:hover{transform:translateY(-4px)}
+@media(max-width:900px){
+ .sec,.flip,#king,#hero,.sec.afaf,#contact,.sec:not(.flip):not(#hero):not(#king):not(.afaf):not(#contact){grid-template-columns:1fr;gap:0;padding-top:0}
+ .media,.flip .media{order:-1;margin:0 -2vw}
+ .txt{padding:36px 0 70px}
+ #hero{padding-top:50px}#hero .media,#contact .media{padding:44px 0 10px;margin:0}#hero .photo{max-height:none;width:78%}.photo2{width:78%;max-height:none}.dots{display:none}
+ .afaf-media{padding:60px 0 0}.sec.afaf .afaf-media{order:-1}
+ .ticker div{font-size:20px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.pp,.bl,.mask>span{opacity:1!important;transform:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="progress" id="bar"></div>
+<nav class="dots" id="dots" aria-label="Sections"></nav>
+<button class="top" id="top" aria-label="Back to top">↑</button>
+
+<section class="sec pink" id="hero" data-title="Sarah Sufi Sheikh">
+ <div class="media" style="align-self:center;padding:60px 0 20px"><div class="photo pp"><img src="assets/hero.webp" alt="Sarah Sufi Sheikh performing stand-up in a black leather jacket" fetchpriority="high"></div></div>
+ <div class="txt">
+  <h1 class="h hero-t"><span class="mask"><span style="--d:.1s">SARAH SUFI</span></span></h1>
+  <div class="h hero-s"><span class="mask"><span class="w" style="--d:.28s;display:block">SHEIKH</span></span></div>
+  <div class="rv" style="--d:.7s"><span class="chip">WRITER</span><span class="chip" style="background:#fff;color:var(--k)">CREATIVE PRODUCER</span><span class="chip">STAND UP COMEDIAN</span><span class="chip" style="background:var(--y);color:var(--k)">DRAG KING</span></div>
+ </div>
+ <div class="ticker" aria-hidden="true"><div id="tk"></div></div>
+</section>
+
+<section class="sec cream" id="about" data-title="I'M SARAH">
+ <div class="txt">
+  <span class="chip rv" style="background:var(--p);color:var(--k)">HELLO FRIEND</span>
+  <h2 class="h" style="margin:.2em 0 .35em -.03em;font-size:clamp(60px,calc(var(--u)*9.4),210px)"><span class="mask"><span>I'M</span></span><span class="mask"><span style="--d:.12s">SARAH</span></span></h2>
+  <p class="rv" style="--d:.2s">Sarah Sheikh is a Bengaluru/Goa-based stand-up comedian, live performer, and creative producer whose work sits at the intersection of comedy, character performance, and cultural commentary.</p>
+  <p class="rv" style="--d:.3s">With roots in the production side of the comedy scene at Underground Comedy Club, Sarah brings a strong understanding of both stagecraft and audience dynamics into her performances. Over the past year, she has performed across major comedy circuits in Bangalore, Mumbai, and Goa, steadily building a voice that is both irreverent and distinct.</p>
+ </div>
+ <div class="media" style="aspect-ratio:1/.98">
+  <div class="blob bl blobw" style="background:var(--y);width:88%;aspect-ratio:1;left:8%;top:0"></div>
+  <div class="blob bl blobw" style="background:var(--p);width:26%;aspect-ratio:1;right:2%;top:-6%"></div>
+  <div class="pop pp" style="width:100%;left:0"><img class="par" data-s=".05" src="assets/cut-about.webp" alt="Sarah on stage with a microphone, smiling"></div>
+ </div>
+</section>
+
+<section class="sec yellow flip" id="panel" data-title="PANEL SHOWS">
+ <div class="txt">
+  <h2 class="h rv" style="font-size:clamp(38px,calc(var(--u)*5.4),100px)">PANEL SHOWS</h2>
+  <ul class="rvl"><li>MADHUL MODEL (x2)</li><li>SWIPE RIGHT (x2)</li></ul>
+  <h2 class="h rv" style="font-size:clamp(38px,calc(var(--u)*5.4),100px);margin-top:.5em"><span class="w">OPENING ACT</span></h2>
+  <ul class="rvl" style="font-size:.8em"><li>MADHUR VIRLI - KORAMANGALA CLUB (x2)</li><li>MADHUR VIRLI - COMEDY THEATRE</li><li>NISHANT TANWAR - UNDERGROUND COMEDY CLUB (x3)</li><li>NISHANT TANWAR - COMEDY THEATRE</li><li>SHUBHAM PUJARI, HARMANPREET SINGH, VISHNU VAKA, AAMER PEERAN - UGC</li></ul>
+ </div>
+ <div class="media" style="aspect-ratio:1/.86">
+  <div class="blob bl blobw" style="background:var(--p);width:92%;aspect-ratio:1;left:2%;top:-8%"></div>
+  <div class="pop pp" style="width:106%;left:-6%"><img class="par" data-s=".04" src="assets/cut-panel.webp" alt="Sarah making a playful face at the camera"></div>
+ </div>
+</section>
+
+<section class="sec ink dark" id="lineup" data-title="LINE-UP SHOWS">
+ <div class="txt">
+  <h2 class="h yy rv" style="font-size:clamp(46px,calc(var(--u)*7.6),140px);color:var(--y)">LINE-UP<br>SHOWS</h2>
+  <ul class="rvl"><li>LATE NIGHT SEXY JOKES - UNDERGROUND COMEDY CLUB</li><li>LADIES LOG - UNDERGROUND COMEDY FESTIVAL</li><li>SHE SAID IT (ALL FEMALE COMEDIANS) - JUST BLR</li><li>QUEER RATED COMEDY - UNDERGROUND COMEDY CLUB, INDIFFERENT-BANDRA, MISFIT-GOA, BAREFOOT-GOA.</li><li>BEST OF BANGALORE - COMEDY THEATRE</li><li>URBAN SOLACE COMEDY LINEUP</li></ul>
+ </div>
+ <div class="media" style="aspect-ratio:1/.9">
+  <div class="blob bl blobw" style="background:var(--p);width:84%;aspect-ratio:1;left:10%;top:-4%"></div>
+  <div class="pop pp" style="width:92%;left:6%"><img class="par" data-s=".05" src="assets/cut-lineup.webp" alt="Sarah seated, resting her chin on her hand"></div>
+ </div>
+</section>
+
+<section class="sec cream flip" id="corporate" data-title="CORPORATE/COLLEGE">
+ <div class="txt">
+  <h2 class="h rv" style="font-size:clamp(40px,calc(var(--u)*6.8),124px)">CORPORATE/<br>COLLEGE</h2>
+  <ul class="rvl"><li>STAND-UP COMEDY JUDGE AT NEXUS, AN INTER COLLEGE FEST ORGANISED BY JAIN INSTITUTIONS.</li><li>WOMEN'S DAY CELEBRATION AT ELUCIDATA (WITH SOWAKA) - STANDUP + GAMES WITH ALL FEMALE EMPLOYEES AT ELUCIDATA.</li><li>TEDxCIT - ENTERTAINER AT TEDx CAMBRIDGE INSTITUTE OF TECHNOLOGY, STAND-UP COMEDY.</li><li>COLLEGE DAY - INDIAN INSTITUTE OF PSYCHOLOGY AND RESEARCH. STAND-UP COMEDY SHOW FOR 400 PAX INCLUDING STUDENTS, ALUMNI, TEACHERS AND PARENTS.</li></ul>
+ </div>
+ <div class="media" style="aspect-ratio:1/1.12">
+  <div class="blob bl blobw" style="background:var(--y);width:104%;aspect-ratio:1;left:-2%;top:6%"></div>
+  <div class="blob bl blobw" style="background:var(--p);width:34%;aspect-ratio:1;right:0;bottom:12%"></div>
+  <div class="pop pp" style="width:64%;left:18%"><img class="par" data-s=".05" src="assets/cut-corporate.webp" alt="Sarah in a pink patterned dress"></div>
+ </div>
+</section>
+
+<section class="sec pink" id="king" data-title="DRAG KING">
+ <div class="media" style="aspect-ratio:1/1.08;order:-1">
+  <div class="blob bl blobw" style="background:var(--y);width:104%;aspect-ratio:1;left:-2%;top:2%"></div>
+  <div class="pop pp" style="width:38%;left:2%;--d:.1s"><img class="par" data-s=".06" src="assets/cut-king-a.webp" alt="Chacha Cheech, the drag king persona, holding a ukulele"></div>
+  <div class="pop pp" style="width:60%;left:38%;--d:.25s"><img class="par" data-s=".03" src="assets/cut-king-b.webp" alt="Sarah in a drag king look, seated in a shimmering jacket"></div>
+ </div>
+ <div class="txt">
+  <h2 class="h rv" style="font-size:clamp(46px,calc(var(--u)*6),110px);color:#fff;text-shadow:.05em .05em 0 var(--k)">DRAG KING</h2>
+  <div class="rv" style="margin-top:1.1em;font-weight:600">
+   <p style="font-size:clamp(15px,calc(var(--u)*1.32),25px);font-weight:600">A defining aspect of her performance style is experimentation with form and identity.</p>
+   <p style="font-size:clamp(15px,calc(var(--u)*1.32),25px);font-weight:600">She is the first Indian stand-up comedian to perform in a drag king persona, Chacha Cheech: a bold, exaggerated character that blends stand-up with theatrical satire, often engaging with themes of sexuality, masculinity, and social contradiction.</p>
+   <p style="font-size:clamp(15px,calc(var(--u)*1.32),25px);font-weight:600">She also has a character based on local Bangalore boys, called Sheikh Potta. He is an outspoken, "porki" guy who is blissfully unaware of the chaos around him. His day is fulfilled with a Sulaimani or crushing on his new neighbour, Fatima.<br>He's also a proud Kannadiga and claims he can buy the Champagne region of France for his lady love</p>
+  </div>
+ </div>
+</section>
+
+<section class="sec yellow afaf" id="afaf" data-title="ASKING FOR A FRIEND">
+ <div class="afaf-media">
+  <div class="card pp"><img src="assets/afaf-thumb.webp" alt="Asking for a Friend — Special mention: Sarah Sheikh, Hussain Changi, Harmanpreet Singh"></div>
+  <div class="card pp" style="--d:.2s"><img src="assets/afaf-credits.webp" alt="Credits for Asking for a Friend"></div>
+ </div>
+ <div class="txt">
+  <h2 class="h rv" style="font-size:clamp(46px,calc(var(--u)*7.4),138px)">ASKING<br>FOR A<br><span class="w">FRIEND</span></h2>
+  <p class="rv" style="margin-top:1em;font-size:clamp(18px,calc(var(--u)*2),37px);--d:.15s">She has also extended her profile into project management with Asking for a Friend by Shashi Dhiman which has garnered over <b class="cnt" data-to="30">30</b>million+ views across various digital platforms. She managed talent scouting, creative direction, on ground operations and production for season 1 of the show.</p>
+ </div>
+</section>
+
+<section class="sec ink dark flip" id="fringe" data-title="MUMBAI FRINGE FEST">
+ <div class="txt">
+  <h2 class="h rv" style="font-size:clamp(46px,calc(var(--u)*7.4),136px);color:var(--p)">MUMBAI<br>FRINGE<br>FEST</h2>
+  <div class="rv" style="margin-top:1em;--d:.1s">
+   <p style="font-size:clamp(16px,calc(var(--u)*1.7),31px)">The largest performing arts festival, Fringe Fest was brought to India this year as the 'MUMBAI FRINGE FEST'.</p>
+   <p style="font-size:clamp(16px,calc(var(--u)*1.7),31px)">With shows by all A-listers across 4 venues, Sarah Sheikh was a part of the Queer Rated Comedy line-up of the closing show at Indifferent, Bandra.</p>
+   <p style="font-size:clamp(16px,calc(var(--u)*1.7),31px)">With a sold out show and house full audience, Sarah Sheikh brought her edgy humor with physical act-outs and unleashed a riot of laughter.</p>
+  </div>
+ </div>
+ <div class="media" style="aspect-ratio:1/.9">
+  <div class="blob bl blobw" style="background:var(--y);width:92%;aspect-ratio:1;left:4%;top:4%"></div>
+  <div class="pop pp" style="width:74%;left:-8%"><img class="par" data-s=".05" src="assets/cut-fringe-a.webp" alt="Sarah performing at Mumbai Fringe Fest"></div>
+  <div class="pop pp" style="width:88%;left:22%;--d:.25s"><img class="par" data-s=".03" src="assets/cut-fringe-b.webp" alt="Sarah mid-act at Mumbai Fringe Fest"></div>
+ </div>
+</section>
+
+<section class="sec pink" id="contact" data-title="RENT A COMIC, SAVE A LIFE">
+ <div class="media" style="align-self:center;padding:50px 0"><div class="photo2 card pp"><img src="assets/closing.webp" alt="Sarah on stage with her hand outstretched" style="object-position:50% 50%"></div></div>
+ <div class="txt">
+  <h2 class="h" style="font-size:clamp(44px,calc(var(--u)*7),130px)"><span class="mask"><span>RENT A COMIC,</span></span><span class="mask"><span class="w" style="--d:.15s;display:block">SAVE A LIFE</span></span></h2>
+  <div class="links rv" style="--d:.3s"><a href="tel:+917760942103">Call: +91 77609 42103</a><a href="mailto:sarahsheikh1198@gmail.com">Email: sarahsheikh1198@gmail.com</a><a href="https://www.instagram.com/wakeandsheikh_/" target="_blank" rel="noopener">INSTAGRAM: @wakeandsheikh_</a></div>
+ </div>
+</section>
+
+<script>
+(()=>{
+const $=(s,r=document)=>[...r.querySelectorAll(s)];
+const secs=$('.sec');
+// ticker
+const t="WRITER • CREATIVE PRODUCER • STAND UP COMEDIAN • DRAG KING •";
+document.getElementById('tk').innerHTML=Array(12).fill(`<span>${t}</span>`).join('');
+// dots
+const dots=document.getElementById('dots');
+secs.forEach(s=>{const a=document.createElement('a');a.href='#'+s.id;a.title=a.ariaLabel=s.dataset.title;dots.appendChild(a)});
+const da=$('a',dots);
+// list stagger
+$('.rvl').forEach(u=>$('li',u).forEach((li,i)=>{li.classList.add('rv');li.style.setProperty('--d',(i*.08)+'s')}));
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);if(e.target.querySelector&&e.target.classList.contains('rv'))count(e.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+$('.rv,.pp,.bl,.mask,.sec .h').forEach(el=>io.observe(el));
+// section in-view (dots + parallax scope)
+const act=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const i=secs.indexOf(e.target);da.forEach((d,k)=>d.classList.toggle('on',k===i))}}),{threshold:.5});
+secs.forEach(s=>act.observe(s));
+// count-up
+function count(root){$('.cnt',root).forEach(el=>{if(el.dataset.done)return;el.dataset.done=1;const to=+el.dataset.to,t0=performance.now();(function f(n){const k=Math.min(1,(n-t0)/1600);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)})(t0)})}
+// scroll: progress, parallax, back to top
+const bar=document.getElementById('bar'),top=document.getElementById('top');
+const pars=$('.par'),rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+let tick=false;
+function onScroll(){
+ const h=document.documentElement,y=scrollY;
+ bar.style.transform=`scaleX(${y/(h.scrollHeight-innerHeight||1)})`;
+ top.classList.toggle('show',y>innerHeight);
+ if(!rm)pars.forEach(p=>{const r=p.parentElement.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;const c=r.top+r.height/2-innerHeight/2;p.style.setProperty('--py',(c*parseFloat(p.dataset.s)*-1).toFixed(1)+'px')});
+ tick=false}
+addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});onScroll();
+top.onclick=()=>scrollTo({top:0});
+// mouse tilt per section
+if(!rm&&matchMedia('(hover:hover)').matches)secs.forEach(s=>{
+ s.addEventListener('pointermove',e=>{const r=s.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+  $('.par',s).forEach((p,i)=>{p.style.setProperty('--mx',(x*28*(i?1.4:1)).toFixed(1)+'px');p.style.setProperty('--rot',(x*2.2*(i?-1:1)).toFixed(2)+'deg')})});
+ s.addEventListener('pointerleave',()=>$('.par',s).forEach(p=>{p.style.setProperty('--mx','0px');p.style.setProperty('--rot','0deg')}))});
+})();
+</script>
+</body>
+</html>
